@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import Login from '../Login/Login';
 
 class Layout extends Component {
     render() {
       return (
         <div>
           <Switch>
-            <p>jello</p>
+          <Route exact path="/" component={Login}/>
           </Switch>
         </div>
       );
